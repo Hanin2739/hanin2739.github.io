@@ -43,17 +43,37 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-
-
-
-    
+     createPlatform(750,680,450,15);
+     createPlatform(195,680,450,15);
+     createPlatform(472,578,450,15);
+     createPlatform(1000,500,300,15);
+     createPlatform(130,480,300,15);
+     createPlatform(130,380,200,15);
+     createPlatform(1100,385,200,15);
+     createPlatform(472,370,450,15);
+     createPlatform(575,250,250,15);
+     createPlatform(850,130,450,15);
+     createPlatform(130,130,450,15);
+     
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-
-
+    createCollectable('database', 550,480,24,0.5);
+    createCollectable('database',800,480,24,0.5);
+    createCollectable('database',214,310,24,0.5);
+    createCollectable('database',1174,315,24,0.5);
+    createCollectable('database',265,585,24,0.5);
+    createCollectable('database',535,585,24,0.5);
+    createCollectable('database',835,585,24,0.5);
+    createCollectable('database',1090,585,24,0.5);
+    createCollectable('database', 725,200,24,0.5);
+    createCollectable('database',635,200,24,0.5);
+    createCollectable('database',200,90,24,0.5);
+    createCollectable('database',460,90,24,0.5);
+    createCollectable('database',925,90,24,0.5);
+    createCollectable('database',1190,90,24,0.5);
 
 
     // TODO 3
@@ -61,8 +81,10 @@ $(function () {
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-
-
+    createCannon('top',300,1000);
+    createCannon('bottom',642,1000);
+    createCannon('top',758,1000);
+    createCannon('top',1200,1000);
 
 
     /////////////////////////////////////////////////
