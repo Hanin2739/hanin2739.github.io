@@ -46,6 +46,10 @@
 			
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
 			box.on('click', handleBoxClick);
+			function handleBoxClick() {
+				positionX = 0;
+				changeBoxText(1);
+			}
 
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX) {
@@ -63,7 +67,6 @@
 			
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
-
 			
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
@@ -72,17 +75,21 @@
 			*/
 			function update() {
 				/* Your Code to Increase positionX by 10 HERE */
-				moveBoxTo(1500);
-				moveBoxTo(boardWidth);
-				moveBoxTo(positionX);
 				positionX = 0 + 10;
-				moveBoxTo(positionX)
-				positionX = 10 + 10;
-				moveBoxTo(positionX)
+				moveBoxTo(positionX);
+
+				positionX = 10 + 20;
+				moveBoxTo(positionX);
+
 				positionX = 20 + 10;
-				moveBoxTo(positionX)
+				moveBoxTo(positionX);
+
 				positionX = 30 + 10;
 				moveBoxTo(positionX);
+
+				positionX = 40 + 10;
+				moveBoxTo(positionX);
+				
 
 			};
 
