@@ -8,7 +8,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: rgb(113, 230, 173);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -66,6 +66,18 @@
 			var positionX = 0;
 			var points = 0;
 			var speed = 15;
+
+			var colorStr = "rgb(50, 25, 250)";
+			box.css('background-color', colorStr);
+
+			function getRandomColor() {
+				var randomNumberBetween0and255 = Math.random() * 10
+			}
+				getRandomColor();
+
+			var randNum = Math.random() * boardWidth;
+
+
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
